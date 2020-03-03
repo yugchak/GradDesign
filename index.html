@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>自游网</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/header.css">
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+	</head>
+	<body>
+            <div id="head">
+                <header>
+                    <div class="h_left"><a href="index.html"></a></div>
+                    <div class="h_nav">
+                        <ul>
+                            <li class="h_n_click"><a href="#">首页</a></li>
+                            <li><a href="record.html">攻略/游记</a></li>
+                            <li><a href="enjoy.html">风景赏析</a></li>
+                        </ul>
+                    </div>
+                    <div class="h_right">
+                        <a href="javascript:;" class="h_r_login"><i class="iconfont">&#xe604;</i>登陆</a>
+                        <span>|</span>
+                        <a href="javascript:;" class="h_r_register"><i class="iconfont">&#xe606;</i>注册</a>
+                    </div>
+                </header>
+                <div class="l_hide">
+                        <div class="l_h_con">
+                            <form action="php/dologin.php" method="post" id="form">
+                                <p><span class="iconfont">&#xe604;</span><input type="text" name="username" id="loginUser" value="" placeholder="请输入账号" autofocus autocomplete="on"/></p>
+                                <p><span class="iconfont">&#xe602;</span><input type="password" name="password" id="loginPsd" value="" placeholder="请输入密码"/></p>
+                                <div class="l_h_c_btnLogin">登陆</div>
+                                <div class="l_h_c_btnRegister"><span class="iconfont">&#xe606;</span>注册</div>
+                            </form>
+                        <div class="l_h_c_quit iconfont">&#xe607;</div>
+                        </div>
+                </div>
+                <div class="r_hide">
+                    <div class="r_h_con">
+                        <form action="php/doregister.php" method="post">
+                            <p><span>账号：</span><input id="regUser" type="text" placeholder="请输入账号" autofocus/></p>
+                            <p><span>密码：</span><input id="regPsd" type="password" placeholder="请输入密码"/></p>
+                            <p><span>确认密码：</span><input type="password" placeholder="请确认密码"/></p>
+                        </form>
+                        <div class="r_h_c_btnRegister">注册</div>
+                        <div class="r_h_c_btnLogin"><i class="iconfont">&#xe604;</i>登陆</div>
+                        <div class="r_h_c_quit iconfont">&#xe607;</div>
+                    </div>
+                </div>
+            </div>
+			<div id="banner">
+				<div class="b_container">
+					<div class="b_imgLi">
+					<ul>
+						<li style="display: block;"><img src="img/banner/01.jpeg" /></li>
+						<li><img src="img/banner/02.jpg"  /></li>
+						<li><img src="img/banner/03.jpg"  /></li>
+						<li><img src="img/banner/04.jpg"  /></li>
+						<li><img src="img/banner/05.jpg"  /></li>
+					</ul>
+					</div>
+					<div class="b_table_li">
+						<ul><li></li><li></li><li></li><li></li><li></li></ul>
+					</div>
+
+				</div>
+				<div class="b_search">
+					<div class="b_s_input">
+						<input type="text" name="search" id="search" value="" placeholder="搜目的地" autofocus/>
+					</div>
+					<div class="b_s_icon"><a href="javascript:;" class="iconfont">&#xe608;</a></div>
+				</div>
+			</div>
+			<div id="container">
+				<div class="c_left">
+                    <p class="c_left_title cb">热门景点</p>
+                    <div class="c_l_hot">
+                        <a href="javascript:void(0);" class="c_l_h_img">
+                            <img src="img/hot/hot1.jpeg" alt="北极光">
+                        </a>
+
+                        <p class="hot_title">
+                            <a href="##">爱她，就带她追逐一次北极光！阿拉斯加北极光之旅！</a>
+                        </p>
+                        <p class="hot_main">一名著名的女摄影师说，每一次看北极光，她都有被“催眠”的感觉，甚至觉得自己的呼吸都要被北极光的美“带走”了。在各种版本的“一生中一定要做的N件事”中，追逐极光一直都名列前茅。当你置身茫茫雪地，望着那极致绚烂的光感色彩，这是一生难得一遇的生命奇迹。北极光大爆发11年一个轮回，今年的10月28号，让我们去极地自驾，做一个追寻北极光的勇士！</p>
+                    </div>
+                    <div class="c_l_hot">
+                        <a href="javascript:void(0);" class="c_l_h_img">
+                            <img src="img/hot/hot2.jpeg">
+                        </a>
+                        <p class="hot_title">
+                            <a href="##">“帮我照张像吧”</a>
+                        </p>
+                        <p class="hot_main">她是独自旅行的韩国女人，在韩国我极少碰到这样的女人，如果下次再碰到，我一定不会再错过向她问电话号码的机会，但人一辈子不能老是错过啊，你已经设想好所有的情节，你为人生中所有的相遇都做好准备，大海、落日、旅途、搭讪，一切铺陈得完美无瑕，也只会像釜山海边的烟花般瞬间消散。</p>
+                    </div>
+                    <div class="c_l_hot">
+                        <a href="javascript:void(0);" class="c_l_h_img">
+                            <img src="img/hot/hot3.jpeg" alt="北极光">
+                        </a>
+                        <p class="hot_title">
+                            <a href="##">伊斯法罕的清真寺</a>
+                        </p>
+                        <p class="hot_main">走过了土耳其，黎巴嫩，约旦和埃及之后，我的间隔年之旅来到了伊朗，这个国家在古代的名字可能更加显赫——波斯，1978年穆斯林革命之后，在大多数中国人眼里，伊朗伊斯兰共和国像一位披着面纱的波斯姑娘，神秘而遥远。</p>
+                    </div>
+                </div>
+                <div class="c_right">
+                    <div class="c_r_title">
+                        <ul>
+                            <li class="c_r_t_hot click">
+                                <a href="javascript:void(0);">热搜列表</a>
+                            </li>
+                            <li class="c_r_t_new">
+                                <a href="javascript:void(0);">最新发布</a>
+                            </li>
+                            <li class="c_r_t_publish">
+                                <a href="record.html#text">
+                                <span class="iconfont">&#xe60c;</span>
+                                我要发布
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c_r_main">
+                    <!--一 -->
+                        <a href="particular.html">
+                            <div class="main_img">
+                                <img src="img/main/01.jpeg">
+                            </div>
+                            <div class="main_article">
+                                <p class="m_a_title">澳大利亚 RV 自驾之旅集结篇
+                                </p>
+                                <p class="m_a_content">在整理【60天环游美加荟萃篇】游记的时候有一天突发奇想，能不能把北美自驾的体会移植到南太平洋的国度中呢？没想到这个想法和朋友分享的时候，马上得到了 L君夫妇的积极响应。更加让人始料不及的是，我们一行四人打包往澳大利亚的自由行签证的申请，竟然在送出后的第一个工作天就到手了！以致到 L君不得不立即取消了原定到马来西亚的行程，为的是赶在澳大利亚冬季到来之前一起去体验这趟说走就走的自驾之旅。</p>
+                                <ul class="m_a_detail">
+                                    <li class="address">
+                                        <span class="iconfont">&#xe610;</span>
+                                        <p>澳大利亚</p>
+                                    </li>
+                                    <li class="author">
+                                        <span class="iconfont">&#xe60d;</span>
+                                        高山景行
+                                    </li>
+                                    <li class="read">
+                                        <span class="iconfont">&#xe60e;</span>
+                                        <p>12256</p>
+                                    </li>
+                                    <li class="like">
+                                        <span class="iconfont">&#xe60f;</span>
+                                        <p style="color:#f60;">123878</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!-- 二 -->
+                        <a href="particular.html">
+                            <div class="main_img">
+                                <img src="img/main/02.jpeg">
+                            </div>
+                            <div class="main_article">
+                                <p class="m_a_title">一个人的彩云之南
+                                </p>
+                                <p class="m_a_content">记得我初中时，买了人生中的第一本旅游杂志，第一次知道彩云之南，那时候心中对云南就有个小念想。十几年过去啦，在26岁这一年，我终于启程了。由于时间短，拟定的路线是昆明-大理-丽江，共六天半的时间。</p>
+                                <ul class="m_a_detail">
+                                    <li class="address">
+                                        <span class="iconfont">&#xe610;</span>
+                                        <p>云南</p>
+                                    </li>
+                                    <li class="author">
+                                        <span class="iconfont">&#xe60d;</span>
+                                        鸭梨
+                                    </li>
+                                    <li class="read">
+                                        <span class="iconfont">&#xe60e;</span>
+                                        <p>123583</p>
+                                    </li>
+                                    <li class="like">
+                                        <span class="iconfont">&#xe60f;</span>
+                                        <p style="color:#f60;">193045</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!-- 三 -->
+                        <a href="particular.html">
+                            <div class="main_img">
+                                <img src="img/main/03.jpeg">
+                            </div>
+                            <div class="main_article">
+                                <p class="m_a_title">【薄荷时光】春节去薄荷岛取暖吧~
+                                </p>
+                                <p class="m_a_content"> 我们都忘了是在怎样的机缘巧合下说起春节去薄荷岛的，也忘了是在怎样的心情下毅然决然地买下广州马尼拉往返机票的。以至于到最后我都完全没想到这会是趟凌晨两点的超红眼航班，以及我居然会人品大爆发地遇上了忘带相机充电器、红眼航班延误、旱季超差天气、半夜山间大迷路等等让人啼笑皆非的事情。但不得不承认这趟旅程仿佛及时雨一般给了我一个喘息、停歇的机会，让我有时间好好考虑甚至领悟一些事情。</p>
+                                <ul class="m_a_detail">
+                                    <li class="address">
+                                        <span class="iconfont">&#xe610;</span>
+                                        <p>薄荷岛</p>
+                                    </li>
+                                    <li class="author">
+                                        <span class="iconfont">&#xe60d;</span>
+                                        再别康桥
+                                    </li>
+                                    <li class="read">
+                                        <span class="iconfont">&#xe60e;</span>
+                                        <p>118602</p>
+                                    </li>
+                                    <li class="like">
+                                        <span class="iconfont">&#xe60f;</span>
+                                        <p style="color:#f60;">18784</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!-- 四 -->
+                        <a href="particular.html">
+                            <div class="main_img">
+                                <img src="img/main/04.jpeg">
+                            </div>
+                            <div class="main_article">
+                                <p class="m_a_title">每一张照片都是被剪辑的回忆 - 七藏沟徒步
+                                </p>
+                                <p class="m_a_content">经过几次艰难的思想斗争，最终从贡嘎  西坡徒步和七藏沟  徒步中选择了后者。七藏沟位于四川省阿坝藏族羌族自治州松潘县城东北方向，方圆50公里都是荒无人烟的境地。整个行程穿越最高地点为“长海子垭口”，海拔高度约4200米。</p>
+                                <ul class="m_a_detail">
+                                    <li class="address">
+                                        <span class="iconfont">&#xe610;</span>
+                                        <p>七藏沟</p>
+                                    </li>
+                                    <li class="author">
+                                        <span class="iconfont">&#xe60d;</span>
+                                        光辉Ken
+                                    </li>
+                                    <li class="read">
+                                        <span class="iconfont">&#xe60e;</span>
+                                        <p>42892</p>
+                                    </li>
+                                    <li class="like">
+                                        <span class="iconfont">&#xe60f;</span>
+                                        <p style="color:#f60;">18650</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!-- 五 -->
+                        <a href="particular.html">
+                            <div class="main_img">
+                                <img src="img/main/05.jpeg">
+                            </div>
+                            <div class="main_article">
+                                <p class="m_a_title">国庆~津~蜂友首聚雾灵山~
+                                </p>
+                                <p class="m_a_content">时间：十月三日早上7点30分—十月四日晚上7点30分地点：津蓟高速口目的地：雾灵山风景区人数：8人大意：聚会、摄影、自驾、交流这次聚会酝酿很久了，之前本来打算去山西的，但后来由于大家时间上不是很统一，所以临时改变路线，直奔兴隆雾灵山，大家都是第一次见面，外加十一人多车多，还是选个近点的景点，大家都互相了解下，彼此加深感情。这次旅行为期2天，时间上不多，但是我们过的却是非常的充实而快乐。</p>
+                                <ul class="m_a_detail">
+                                    <li class="address">
+                                        <span class="iconfont">&#xe610;</span>
+                                        <p>雾灵山</p>
+                                    </li>
+                                    <li class="author">
+                                        <span class="iconfont">&#xe60d;</span>
+                                        独舞者
+                                    </li>
+                                    <li class="read">
+                                        <span class="iconfont">&#xe60e;</span>
+                                        <p>116298</p>
+                                    </li>
+                                    <li class="like">
+                                        <span class="iconfont">&#xe60f;</span>
+                                        <p style="color:#f60;">13902</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!--六 -->
+                        <a href="particular.html">
+                            <div class="main_img">
+                                <img src="img/main/06.jpeg">
+                            </div>
+                            <div class="main_article">
+                                <p class="m_a_title">Let itbe~伦敦五天自助旅遊景點攻略
+                                </p>
+                                <p class="m_a_content">這是本人在馬蜂窩的第一篇遊記，寫作動機非常單純，其一，由於最近在馬蜂窩上獲得不少珍貴的建議，認為既然取之於此，也必當回饋於此。其二，自2010年以來，因為一直在國外求學，遊歷了30個國家。希望能為自己留下寶貴的回憶或是喚醒在每個地方留下的感動與不捨。而之所以選擇倫敦作為一切的起點，是因為筆著去年剛從英國結束學業，一切都還記憶猶新。此外，我在這個曾經日不落的帝國，圓了不少兒時的夢想。感謝倫敦，帶領我走進世界，討厭倫敦，讓我從此不負責任的放下一切</p>
+                                <ul class="m_a_detail">
+                                    <li class="address">
+                                        <span class="iconfont">&#xe610;</span>
+                                        <p>伦敦</p>
+                                    </li>
+                                    <li class="author">
+                                        <span class="iconfont">&#xe60d;</span>
+                                        Joeybiscult
+                                    </li>
+                                    <li class="read">
+                                        <span class="iconfont">&#xe60e;</span>
+                                        <p>4572</p>
+                                    </li>
+                                    <li class="like">
+                                        <span class="iconfont">&#xe60f;</span>
+                                        <p style="color:#f60;">9082</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    <!-- c_r_main end-->
+                    </div>
+                </div>
+			</div>
+            <div id="footer">
+                <div class="foot_content">
+                    <img src="img/foot.jpg">
+                    <ul>
+                        <li>编者：黄昱泽、蔡超敏、廖啟富</li>
+                        <li>联系电话：13022052543</li>
+                        <li>QQ：362759403</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="aside">
+                <ul>
+                    <li class="a_top"></li>
+                    <li class="a_opinion"></li>
+                    <li class="a_music">
+                        <audio src="music/班得瑞 - Snowdream.mp3" autoplay loop></audio>
+                    </li>
+                </ul>
+                <div class="a_ohide">
+                    <div class="a_oh_wrap">
+                        <h3>意见反馈:</h3>
+                        <textarea name="" id="" cols="40" rows="6"></textarea>
+                        <input type="button" value="提交">
+                        <div class="a_oh_quit iconfont">&#xe607;</div>
+                    </div>
+
+                </div>
+            </div>
+	</body>
+</html>
