@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="攻略">
+    <title>攻略/游记</title>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/record.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+
+    <script src="edittext/js/libs/jquery-1.11.1.min.js"></script>
+    <script src="edittext/js/froala_editor.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="../js/froala_editor_ie8.min.js"></script>
+    <![endif]-->
+    <script src="edittext/js/plugins/tables.min.js"></script>
+    <script src="edittext/js/plugins/lists.min.js"></script>
+    <script src="edittext/js/plugins/colors.min.js"></script>
+    <script src="edittext/js/plugins/media_manager.min.js"></script>
+    <script src="edittext/js/plugins/font_family.min.js"></script>
+    <script src="edittext/js/plugins/font_size.min.js"></script>
+    <script src="edittext/js/plugins/block_styles.min.js"></script>
+    <script src="edittext/js/plugins/video.min.js"></script>
+
+    <link href="edittext/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="edittext/css/froala_editor.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/record.css">
+</head>
+<body>
+    <div id="head">
+        <header>
+            <div class="h_left"><a href="index.html"></a></div>
+            <div class="h_nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li class="h_n_click"><a href="record.html">攻略/游记</a></li>
+                    <li><a href="enjoy.html">风景赏析</a></li>
+                </ul>
+            </div>
+            <div class="h_right">
+                <a href="javascript:;" class="h_r_login"><i class="iconfont">&#xe604;</i>登陆</a>
+                <span>|</span>
+                <a href="javascript:;" class="h_r_register"><i class="iconfont">&#xe606;</i>注册</a>
+            </div>
+        </header>
+        <div class="l_hide">
+                <div class="l_h_con">
+                    <form action="php/dologin.php" method="post" id="form">
+                        <p><span class="iconfont">&#xe604;</span><input type="text" name="username" id="loginUser" value="" placeholder="请输入账号" autofocus autocomplete="on"/></p>
+                        <p><span class="iconfont">&#xe602;</span><input type="password" name="password" id="loginPsd" value="" placeholder="请输入密码"/></p>
+                        <div class="l_h_c_btnLogin">登陆</div>
+                        <div class="l_h_c_btnRegister"><span class="iconfont">&#xe606;</span>注册</div>
+                    </form>
+                <div class="l_h_c_quit iconfont">&#xe607;</div>
+                </div>
+        </div>
+        <div class="r_hide">
+            <div class="r_h_con">
+                <form action="php/doregister.php" method="post">
+                    <p><span>账号：</span><input id="regUser" type="text" placeholder="请输入账号" autofocus/></p>
+                    <p><span>密码：</span><input id="regPsd" type="password" placeholder="请输入密码"/></p>
+                    <p><span>确认密码：</span><input type="password" placeholder="请确认密码"/></p>
+                </form>
+                <div class="r_h_c_btnRegister">注册</div>
+                <div class="r_h_c_btnLogin"><i class="iconfont">&#xe604;</i>登陆</div>
+                <div class="r_h_c_quit iconfont">&#xe607;</div>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div>
+            <div id="choice">
+                <div class="c_container">
+                    <div class="c_wrap">
+                        <div class="country">
+                            <span class="title">国家：</span>
+                            <div class="coun_cont"></div>
+                            <span class="coun_more">更多</span>
+                            <div class="coun_hide"></div>
+                        </div>
+                        <div class="city">
+                            <span class="title">热门城市：</span>
+                            <div class="city_cont">
+                                <a href='javascript:void(0);'><span>北京</span></a>
+                                <a href='javascript:void(0);'><span>华盛顿</span></a>
+                                <a href='javascript:void(0);'><span>伦敦</span></a>
+                                <a href='javascript:void(0);'><span>柏林</span></a>
+                                <a href='javascript:void(0);'><span>巴黎</span></a>
+                                <a href='javascript:void(0);'><span>威尼斯</span></a>
+                                <a href='javascript:void(0);'><span>冰岛</span></a>
+                                <a href='javascript:void(0);'><span>莫斯科</span></a>
+                            </div>
+                            <span class="city_more">更多</span>
+                            <div class="city_hide"></div>
+                        </div>
+                        <div class="theme">
+                            <span class="title">主题：</span>
+                            <div class="th_cont">
+                                <a href='javascript:void(0);'><span>登山</span></a>
+                                <a href='javascript:void(0);'><span>骑行</span></a>
+                                <a href='javascript:void(0);'><span>潜水</span></a>
+                                <a href='javascript:void(0);'><span>徒步</span></a>
+                                <a href='javascript:void(0);'><span>购物</span></a>
+                                <a href='javascript:void(0);'><span>摄影</span></a>
+                                <a href='javascript:void(0);'><span>文化</span></a>
+                                <a href='javascript:void(0);'><span>美食</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c_banner">
+                    <ul>
+                        <li><img src="img/record/banner1.jpg"></li>
+                        <li><img src="img/record/banner2.jpg"></li>
+                        <li><img src="img/record/banner3.jpg"></li>
+                        <li><img src="img/record/banner4.jpg"></li>
+                        <li><img src="img/record/banner5.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rank">
+                <ul>
+                     <li>1<a href="javascript:void(0);">日本</a></li>
+                     <li>2<a href="javascript:void(0);">东京</a></li>
+                     <li>3<a href="javascript:void(0);">成都</a></li>
+                     <li>4<a href="javascript:void(0);">京都</a></li>
+                     <li>5<a href="javascript:void(0);">大理</a></li>
+                     <li>6<a href="javascript:void(0);">香港</a></li>
+                     <li>7<a href="javascript:void(0);">普吉岛</a></li>
+                     <li>8<a href="javascript:void(0);">大阪</a></li>
+                     <li>9<a href="javascript:void(0);">重庆</a></li>
+                     <li>10<a href="javascript:void(0);">厦门</a></li>
+                 </ul>
+            </div>
+            <div id="main">
+                <div>
+                    <a href="particular.html">
+                        <div class="title">最省心攻略&nbsp;当地专业定制家已上线</div>
+                        <p>不知道你是否热爱自由旅行，却苦于繁琐的行程计划；想要尝试当地的特色体验，却又嫌弃网上的答案差了些感觉。不用再困扰了！你的烦恼我们早已get到！想来一场不需要时间策划的自由旅行、又能像本地人一样玩些不同寻常的当地体验？ 恭喜你！这次终于找对了攻略！</p>
+                        <ul>
+                            <li><img src="img/record/tie/1-1.png"></li>
+                            <li><img src="img/record/tie/1-2.png"></li>
+                            <li><img src="img/record/tie/1-3.png"></li>
+                        </ul>
+                    </a>
+                </div>
+                <hr>
+                <div>
+                    <a href="particular.html">
+                        <div class="title">不要被京都死贵的日式旅馆吓破胆，这些便宜的也不错</div>
+                        <p>来到日本的千年古都——京都，不体验一下传统的日式旅馆、睡一下特色的榻榻米，怎么好意思跟人家说来过京都？有钱的可以住大名鼎鼎的“御三家”、高档日式旅馆。但经济出行也有经济出行的玩法，一些性价比超高的经济型日式旅馆也还是有不少的，同样可以让你感受到纯正的和风以及不一样的住宿体验！</p>
+                        <ul>
+                            <li><img src="img/record/tie/2-1.jpeg"></li>
+                            <li><img src="img/record/tie/2-2.jpeg"></li>
+                            <li><img src="img/record/tie/2-3.jpeg"></li>
+                        </ul>
+                    </a>
+                </div>
+                <hr>
+                <div>
+                    <a href="particular.html">
+                        <div class="title">东京周边小众玩法全攻略（川越、轻井泽怎么玩？）</div>
+                        <p>暂时放弃繁华的东京紧张节奏，慢下来体验东京周边的安逸和休闲。日本有许多小镇至今仍然保留着当地传统文化氛围，但是没有一个小镇比川越离东京更近，川越经常被人们称作“小江户”，市内保存了大量寺院与历史街道，完整保留了日本江户时期的历史文化传统，有许多百年老店和古老的住宅 。在这里能感受到浓厚的江户气息。每年10月的第三个周六、周日两天，这里还有盛大的”川越祭“。轻井泽为日本著名的避暑度假胜地。同时也吸引了大批名人，上流阶级在此居住，也是日本最有名最高级的别墅胜地。轻井泽的温泉，秋天的美丽红叶也是吸引众多游客来此的原因。</p>
+                        <ul>
+                            <li><img src="img/record/tie/3-1.jpeg"></li>
+                            <li><img src="img/record/tie/3-2.jpeg"></li>
+                            <li><img src="img/record/tie/3-3.png"></li>
+                        </ul>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div id="page">
+                <a href="javascript:void(0);" class="first">首页</a>
+                <a href="javascript:void(0);" class="previous"  style="display:none">上一页</a>
+                <ul>
+                    <li><a href="javascript:void(0);" class="on">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a href="javascript:void(0);">6</a></li>
+                    <li><a href="javascript:void(0);">7</a></li>
+                    <li><a href="javascript:void(0);">8</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="next">下一页</a>
+                <a href="javascript:void(0);" class="last">尾页</a>
+            </div>
+        </div>
+    </div>
+        <form action="" method="post" id="text">
+            <!-- <textarea name="txt" id="txt" cols="30" rows="10"></textarea> -->
+            <section id="editor">
+                <div id='edit' style="margin-top: 30px;">
+
+                </div>
+            </section>
+            <input type="submit" value="发布">
+        </form>
+    <div id="footer">
+        <div class="foot_content">
+            <img src="img/foot.jpg">
+            <ul>
+                <li>编者：yugchak</li>
+                <li>联系电话：</li>
+                <li>QQ：</li>
+            </ul>
+        </div>
+     </div>
+    <div id="aside">
+        <ul>
+            <li class="backTop"><a href="javascript:void(0);"><div class="char">返回顶部</div></a></li>
+            <li class="publish"><a href="#text"><div class="char">写帖子</div></a></li>
+            <li class="reload"><a href=""><div class="char">刷新</div></a></li>
+        </ul>
+    </div>
+</body>
+</html>
