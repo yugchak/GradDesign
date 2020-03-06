@@ -4,11 +4,11 @@
 /* 默认 */
 @media (min-width: 980px) {#main{width: 100%;}}
 /* 平板电脑和小屏电脑之间的分辨率 */
-@media (min-width: 768px) and (max-width: 979px) {#main{width: 1256px;}}
+@media (min-width: 768px) and (max-width: 979px) {#head_size,#footer_size{width: 1256px;}}
 /* 横向放置的手机和竖向放置的平板电脑之间的分辨率 */
-@media (max-width: 767px) {#main{width: 1256px;}}
+@media (max-width: 767px) {#head_size,#footer_size{width: 1256px;}}
 /* 横向放置的手机及分辨率更小的设备 */
-@media (max-width: 480px) {#main{width: 1256px;}}
+@media (max-width: 480px) {#head_size,#footer_size{width: 1256px;}}
 /*header start*/
 #head{width: 100%;background: #fff;box-shadow: 0 1px 8px #bababa;}
 #head header{width: 100%;height: 55px;margin:0 auto;}
