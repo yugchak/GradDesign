@@ -1,10 +1,11 @@
 @charset "utf-8";
 /* 大屏幕 ：大于等于1200px */
 @media (min-width: 1200px) {#main{width: 100%;}}
+@media (min-width: 1000px) {#main{width: 100%;}}
 /* 默认 */
-@media (min-width: 980px) {#main{width: 100%;}}
+@media (max-width: 980px) {#head_size,#footer_size{width: 1256px;}}
 /* 平板电脑和小屏电脑之间的分辨率 */
-@media (min-width: 768px) and (max-width: 979px) {#head_size,#footer_size{width: 1256px;}}
+@media (min-width: 768px) and (max-width: 990px) {#head_size,#footer_size{width: 1256px;}}
 /* 横向放置的手机和竖向放置的平板电脑之间的分辨率 */
 @media (max-width: 767px) {#head_size,#footer_size{width: 1256px;}}
 /* 横向放置的手机及分辨率更小的设备 */
