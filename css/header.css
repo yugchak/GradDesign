@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*header start*/
 #head{width: 100%;background: #fff;box-shadow: 0 1px 8px #bababa;}
-#head header{width: 1226px;height: 55px;margin:0 auto;}
+#head header{width: 99%;height: 55px;margin:0 auto;}
 #head header .h_left{width: 165px;height:55px;background-image: url(../img/logo.png);float: left;margin-right: 150px;background-size: cover;}
 #head header .h_nav li{float: left;margin-right: 30px;font-size: 18px;height: 55px;box-sizing: border-box;padding: 0 15px;transition: background .3s ease;}
 #head header .h_nav li:hover{border-bottom: 5px solid #ffa500;}
